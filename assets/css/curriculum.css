@@ -4,11 +4,14 @@ body{
 	color: gray;
 }
 .big-container{
-	background-color: gray;
+	background-color: #eeeeee;
+	overflow: auto;
+	z-index: 10;
 }
 .medium-container{
 	margin: 10%;
 	background-color: white;
+	overflow: auto;
 }
 div{
 	box-sizing: border-box;
@@ -56,13 +59,27 @@ ul li{
 .header img{
 	margin: 10px;
 	border-radius: 100px;
-	border: 1px solid black;
+	border: 6px solid #eeeeee;
+	transform: translateY(-50%);
+	z-index: 100
 }
 .header span{
 	color: red;
 }
 .header{
 	text-align: center;
+	border-bottom: 4px solid #eeeeee;
+	overflow: auto;
+	padding: 0;
+}
+.footer{
+	border-top: 4px solid #eeeeee;
+}
+.footer p{
+	float: right;
+	margin:0;
+	padding: 0px 0px 10px 0px;
+	font-size:10px;
 }
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, 
 .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10
@@ -187,13 +204,13 @@ ul li{
     padding: 10px 15px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
 }
-.hobbies {background-color: #da190b;} /* Green */
-.hobbies:hover {background-color: #ff190b;}
+.hobbies {background-color: #da395b;} /* Green */
+.hobbies:hover {background-color: #ff395b;}
 
 #speech-bubble { 
 	margin-left: 15px;
 	padding: 5px;
-    background: #cccccc;
+    background: #eeeeee;
     position: relative;
     border-radius: 10px;
 }
@@ -203,7 +220,7 @@ ul li{
    width: 0;
    height: 0;
    border-top: 10px solid transparent;
-   border-right: 15px solid #cccccc;
+   border-right: 15px solid #eeeeee;
    border-bottom: 10px solid transparent;
    margin: 5px 0 0 -15px;
 }
